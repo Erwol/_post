@@ -1,10 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66833788-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-66833788-2');
+		</script>
+		<!-- End Google Analytics -->
+
 		<title>Ernesto Wulff Olea</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Icon fixes -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 	</head>
 	<body class="landing is-preload">
 		<div id="page-wrapper">
@@ -19,6 +33,14 @@
 							<li><a href="index.html">About</a></li>
 							<li><a href="#contact" class="button">Contact</a></li>
 
+							<!-- Google translate -->
+							<div id="google_translate_element"></div><script type="text/javascript">
+							function googleTranslateElementInit() {
+								new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ca,de,es,fr,it,pl,ru,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-66833788-2'}, 'google_translate_element');
+							}
+							</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+							<!-- End Google Translate -->
+							
 						</ul>
 					</nav>
 				</header>
@@ -41,37 +63,70 @@
 							<h2>Welcome to my portfolio</h2>
 							<p>A more detailed view of my career than the available at <a href="https://www.linkedin.com/in/ernestowulff/"> my LinkedIn profile</a>.</p>
 						</header>
-						<!--
-						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
-					-->
 					</section>
 
 				<!-- Features -->
 					<section class="box special features">
-						<div class="features-row">
-							<section>
-								<img src="./images/skills/js.png"/>
-								<h3>JavaScript</h3>
-								<p>Experience developing mobile, web and desktop applications, using vanila and JS frameworks such as Vue or Angular.</p>
-							</section>
-							<section>
-								<img src="./images/skills/python.png"/>
-								<h3>Python</h3>
-								<p>From web scrapping to backend development using Django or Flask, Python is one of my favourite tools.</p>
-							</section>
+						<!-- Main container -->
+						<div class="row">
+							<!-- Tech skills -->
+							<div class="col-6">
+								<div class="features-row">
+									<section>
+										<img src="./images/skills/js.png"/>
+										<h3>JavaScript</h3>
+										<p>Experience developing mobile, web and desktop applications, using vanila and JS frameworks such as Vue or Angular.</p>
+									</section>
+									<section>
+										<img src="./images/skills/python.png"/>
+										<h3>Python</h3>
+										<p>From web scrapping to backend development using Django or Flask, Python is one of my favourite tools.</p>
+									</section>
+								</div>
+								<div class="features-row">
+									<section>
+										<img src="./images/skills/c.png"/>
+										<h3>C#, C++, C</h3>
+										<p>My career as a programmer started with C, then I learned C++ for my college education and got used to C# after working on web (.NET) and gaming (Unity) projects.</p>
+									</section>
+									<section>
+										<img src="./images/skills/java.png"/>
+										<h3>Java</h3>
+										<p>Concurrent and web programming with Java is something I've intensively experienced and loved when using Spring or CFML in different projects.</p>
+									</section>
+								</div>
+							</div>
+
+							<!-- Personal skills -->
+							<div class="col-6">
+								<div class="features-row">
+									<section>
+										<img src="./images/skills/communication.png"/>
+										<h3>Communication</h3>
+										<p>I've an ease for communicating, and I'm able to do it fluently in both English and Spanish.</p>
+									</section>
+									<section>
+										<img src="./images/skills/creativity.png"/>
+										<h3>Creativity</h3>
+										<p>I'm a very creative person who loves collaborating in the development of new ideas and existing ones.</p>
+									</section>
+								</div>
+								<div class="features-row">
+									<section>
+										<img src="./images/skills/flexible.png"/>
+										<h3>Flexibility</h3>
+										<p>Getting used to new scenarios it's something I like; I can adapt myself to new situations easily.</p>
+									</section>
+									<section>
+										<img src="./images/skills/collaboration.png"/>
+										<h3>Collaboration</h3>
+										<p>Modern Software Engineering requires an all levels collaboration, from control version to testing, I'm used to.</p>
+									</section>
+								</div>
+							</div>
+
 						</div>
-						<div class="features-row">
-							<section>
-								<img src="./images/skills/c.png"/>
-								<h3>C#, C++, C</h3>
-								<p>My career as a programmer started with C, then I learned C++ for my college education and got used to C# after working on web (.NET) and gaming (Unity) projects.</p>
-							</section>
-							<section>
-								<img src="./images/skills/java.png"/>
-								<h3>Java</h3>
-								<p>Concurrent and web programming with Java is something I've intensively experienced and loved when using Spring or CFML in different projects.</p>
-							</section>
-						</div>
+
 					</section>
 				<!-- End features -->
 
@@ -260,30 +315,19 @@
 
 				</section>
 
-			<!-- CTA
-				<section id="cta">
-
-					<h2>Sign up for beta access</h2>
-					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
-
-					<form>
-						<div class="row gtr-50 gtr-uniform">
-							<div class="col-8 col-12-mobilep">
-								<input type="email" name="email" id="email" placeholder="Email Address" />
-							</div>
-							<div class="col-4 col-12-mobilep">
-								<input type="submit" value="Sign Up" class="fit" />
-							</div>
-						</div>
-					</form>
-
-				</section>
- -->
 			<!-- Contact -->
 			<section id="contact" class="container medium">
 				<header>
-					<h2>Contact Us</h2>
-					<p>Tell us what you think about our little operation.</p>
+					<h2 style="text-align: center;">Contact</h2>
+					<ul style="text-align:center;" class="icons">
+
+						<li><a href="https://www.linkedin.com/in/ernestowulff/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://stackoverflow.com/users/3950052/erwol" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+						<li><a href="https://github.com/erwol" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.facebook.com/ernesto.wulffolea" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/ernesto.wulff/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://plus.google.com/+ErnestoWulffOlea" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
 				</header>
 				<div class="box">
 					<form method="post" action="https://formspree.io/ernes.wo@gmail.com">
@@ -312,15 +356,16 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+
+						<li><a href="https://www.linkedin.com/in/ernestowulff/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://stackoverflow.com/users/3950052/erwol" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+						<li><a href="https://github.com/erwol" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.facebook.com/ernesto.wulffolea" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/ernesto.wulff/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://plus.google.com/+ErnestoWulffOlea" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy;<span id="generatedYear"></span> Ernesto Wulff Olea. All rights reserved.</li><li> Design by <a href="https://twitter.com/ajlkn?lang=en" target="_blank">@ajlkn</a></li>
 					</ul>
 				</footer>
 
@@ -334,6 +379,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				var d = new Date();
+				var n = d.getFullYear();
+				document.getElementById("generatedYear").innerHTML = n;
+			</script>
 
 	</body>
 </html>
